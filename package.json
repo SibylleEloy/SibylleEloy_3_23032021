@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SibylleEloy_3_23032021",
   "main": "index.js",
+  "emmet.triggerExpansionOnTab": true,
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
