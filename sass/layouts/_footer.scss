@@ -9,8 +9,17 @@
       padding-bottom: 2em;
       padding-top: 1em;
     }
-    .img {
+    li {
+      display: flex;
+      align-items: center;
+      .img {
+      margin-bottom: 1em;
       --color_fill: white;
+      }
+      p {
+        margin: 0;
+        padding: 0 0 0.5em 1em;
+      } 
     }
   }
 }

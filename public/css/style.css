@@ -29,7 +29,10 @@ body {
 }
 
 .restaurants__cards {
-  padding: 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
   margin-top: -5px;
   align-self: center;
 }
@@ -134,8 +137,17 @@ body {
   padding-bottom: 2em;
   padding-top: 1em;
 }
-.footer__nav .img {
+.footer__nav li {
+  display: flex;
+  align-items: center;
+}
+.footer__nav li .img {
+  margin-bottom: 1em;
   --color_fill: white;
+}
+.footer__nav li p {
+  margin: 0;
+  padding: 0 0 0.5em 1em;
 }
 
 .restaurants {
