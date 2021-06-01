@@ -12,14 +12,22 @@
     li {
       display: flex;
       align-items: center;
-      .img {
-      margin-bottom: 1em;
-      --color_fill: white;
+      img {
+        width: 6em;
+        margin-top: 1em;
+        margin-bottom: 1em;
       }
       p {
         margin: 0;
-        padding: 0 0 0.5em 1em;
-      } 
+        padding: 0 0 0.5em 0;
+      }
+      .fa,
+      .fas {
+        margin-right: 1em;
+      }
+      .fa-hands-helping {
+        width: 11px;
+      }
     }
   }
 }

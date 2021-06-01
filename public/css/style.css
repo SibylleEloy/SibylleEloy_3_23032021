@@ -141,13 +141,21 @@ body {
   display: flex;
   align-items: center;
 }
-.footer__nav li .img {
+.footer__nav li img {
+  width: 6em;
+  margin-top: 1em;
   margin-bottom: 1em;
-  --color_fill: white;
 }
 .footer__nav li p {
   margin: 0;
-  padding: 0 0 0.5em 1em;
+  padding: 0 0 0.5em 0;
+}
+.footer__nav li .fa,
+.footer__nav li .fas {
+  margin-right: 1em;
+}
+.footer__nav li .fa-hands-helping {
+  width: 11px;
 }
 
 .restaurants {
@@ -163,6 +171,7 @@ body {
 }
 .about__project {
   background-color: #f6f6f6;
+  padding-bottom: 1.5em;
 }
 .about__project h1 {
   text-align: center;
@@ -178,7 +187,7 @@ body {
   color: #4d4d4d;
 }
 .about__menu {
-  margin-top: 6em;
+  margin-top: 3em;
 }
 .about__menu h1 {
   margin-left: 1em;
@@ -204,7 +213,7 @@ body {
   width: 23px;
   height: 23px;
   padding: 3px;
-  background: #9356DC;
+  background: #9356dc;
   color: white;
   text-align: center;
   font-size: 14px;
@@ -213,20 +222,23 @@ body {
 .about__menu .carditem p {
   margin-left: 1.5em;
 }
-.about__menu .carditem .fa, .about__menu .carditem .fas {
+.about__menu .carditem .fa,
+.about__menu .carditem .fas {
   margin-left: 1em;
 }
 .about__menu .carditem--disabled {
   background-color: #f6f6f6;
 }
-.about__menu .carditem--disabled .fa, .about__menu .carditem--disabled .fas {
+.about__menu .carditem--disabled .fa,
+.about__menu .carditem--disabled .fas {
   color: #737373;
 }
 .about__menu .carditem--active {
   background-color: #f4ebfe;
 }
-.about__menu .carditem--active .fa, .about__menu .carditem--active .fas {
-  color: #9356DC;
+.about__menu .carditem--active .fa,
+.about__menu .carditem--active .fas {
+  color: #9356dc;
 }
 
 .localisation {
