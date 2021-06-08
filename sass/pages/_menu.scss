@@ -67,6 +67,19 @@
   }
 }
 
+/** media queries from tablet**/
+
+.menu__banner {
+  img {
+    @include mq($from: tablet) {
+      width: 100%;
+      height: auto;
+      max-height: 280px;
+      object-fit: cover;
+    }
+  }
+}
+
 .menu__list {
   @include mq($from: tablet) {
     display: flex;
