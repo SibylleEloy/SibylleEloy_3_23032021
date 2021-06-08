@@ -40,3 +40,15 @@
     }
   }
 }
+
+.header__nav {
+  @include mq($from: tablet) {
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+  }
+  img {
+    padding-left: 0;
+    margin: auto;
+  }
+}

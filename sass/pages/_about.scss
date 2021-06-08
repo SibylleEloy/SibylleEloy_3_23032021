@@ -18,7 +18,7 @@
     }
   }
   &__menu {
-    margin-top: 3em;
+    margin: 3em 0 4em 0;
     h1 {
       margin-left: 1em;
       margin-bottom: 1em;
@@ -69,6 +69,40 @@
           color: #9356dc;
         }
       }
+    }
+  }
+}
+
+.about__menu {
+  @include mq($from: tablet, $until: wide) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin-left: 0;
+  }
+  &__cardslist {
+    padding: 0;
+  }
+}
+
+.restaurants {
+  @include mq($from: tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin-left: 0;
+  }
+  .restaurants__cards {
+    @include mq($from: tablet) {
+      display: flex;
+      flex-direction: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
