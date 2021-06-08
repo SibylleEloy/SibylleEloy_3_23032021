@@ -1,3 +1,7 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+}
 .about {
   margin: 0;
   &__project {
@@ -20,12 +24,13 @@
   &__menu {
     margin: 3em 0 4em 0;
     h1 {
-      margin-left: 1em;
+      margin-left: -10px;
       margin-bottom: 1em;
+      font-size: 22px;
     }
     &__cardslist {
       list-style-type: none;
-      padding-left: 2.5em;
+      padding: 0;
     }
     .carditem {
       display: flex;
@@ -73,17 +78,38 @@
   }
 }
 
+.wrap {
+  @include mq($from: wide) {
+    display: block;
+  }
+}
+
 .about__menu {
-  @include mq($from: tablet, $until: wide) {
+  @include mq($from: tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    h1 {
+      margin-left: 0;
+    }
+    &__cardslist {
+      padding: 0;
+    }
   }
-  h1 {
-    margin-left: 0;
+  @include mq($from: wide) {
+    display: block;
+    h1 {
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 3em;
+    }
   }
-  &__cardslist {
-    padding: 0;
+}
+
+.about__menu__cardslist {
+  @include mq($from: wide) {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -92,9 +118,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  h1 {
-    margin-left: 0;
+    h1 {
+      margin-left: 0;
+      margin-bottom: 1em;
+    }
   }
   .restaurants__cards {
     @include mq($from: tablet) {
