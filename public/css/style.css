@@ -29,9 +29,10 @@ body {
   border-radius: 25px;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background-color 1s;
 }
 .btn:hover {
-  filter: brightness(85%);
+  background: #782cd3;
 }
 
 .restaurants {

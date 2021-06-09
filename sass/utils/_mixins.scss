@@ -1,0 +1,3 @@
+@mixin btn-darken($color:$color-primary) {
+    background: darken($color, 10%)
+}
