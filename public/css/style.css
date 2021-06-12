@@ -32,7 +32,8 @@ body {
   transition: background-color 1s;
 }
 .btn:hover {
-  background: #782cd3;
+  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
+  box-shadow: black 0px 3px 8px;
 }
 
 .restaurants {
@@ -108,8 +109,16 @@ body {
   font-size: 18px;
   color: #4d4d4d;
 }
-.restaurants .restaurant-item__content .far {
-  margin-top: 5px;
+.restaurants .restaurant-item__content svg {
+  width: 22px;
+  margin-bottom: 45px;
+}
+.restaurants .restaurant-item__content svg .path {
+  stroke-width: 20;
+  stroke: black;
+}
+.restaurants .restaurant-item__content svg:hover {
+  fill: url(#bottom-to-top);
 }
 
 .header {

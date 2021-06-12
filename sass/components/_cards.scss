@@ -76,8 +76,18 @@
       font-size: 18px;
       color: #4d4d4d;
     }
-    .far {
-      margin-top: 5px;
+    svg {
+      width: 22px;
+      margin-bottom: 45px;
+
+      .path {
+        stroke-width: 20;
+        stroke: black;
+      }
+
+      &:hover {
+        fill: url(#bottom-to-top);
+      }
     }
   }
 }
