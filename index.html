@@ -73,7 +73,10 @@
                   <svg id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="-15 18 535 512">
                     <defs>
                       <linearGradient id="bottom-to-top" x2="0%" y1="100%" y2="0%">
-                        <stop offset="0" stop-color="#8b3fe7">
+                        <stop offset="0" stop-color="#9356dc">
+                          <animate dur="2s" attributeName="offset" from="0" to="1" begin="heart.mouseover" end="heart.mouseout"/>
+                        </stop>
+                        <stop offset="0" stop-color="#ff79da">
                           <animate dur="2s" attributeName="offset" fill="freeze" from="0" to="1" begin="heart.mouseover" end="heart.mouseout"/>
                         </stop>
                         <stop offset="0" stop-color="#fff">
