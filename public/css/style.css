@@ -28,12 +28,12 @@ body {
   font-weight: bold;
   border-radius: 25px;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all 300ms ease;
+  box-shadow: 0px 22px 24px 0px rgba(0, 0, 0, 0.08);
+  transition: all 600ms ease;
 }
 .btn:hover {
   background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
-  box-shadow: black 0px 3px 8px;
+  box-shadow: #737373 0px 2px 3px;
 }
 
 .restaurants {
@@ -447,6 +447,8 @@ body {
   height: 75px;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  -webkit-animation: slide-fwd-top 0.45s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: slide-fwd-top 0.85s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .menu__list__cards h2 {
   font-size: 18px;
@@ -465,6 +467,30 @@ body {
   font-size: 15px;
   color: #353535;
   margin: 0;
+}
+@-webkit-keyframes slide-fwd-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(0) translateY(25px);
+    transform: translateZ(0) translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0px) translateY(0px);
+    transform: translateZ(0px) translateY(0px);
+  }
+}
+@keyframes slide-fwd-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(0) translateY(25px);
+    transform: translateZ(0) translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0px) translateY(0px);
+    transform: translateZ(0px) translateY(0px);
+  }
 }
 .menu .btn {
   width: 200px;
