@@ -467,6 +467,11 @@ body {
   font-size: 15px;
   color: #353535;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__list__cards:hover .price {
+  text-indent: -140px;
 }
 .menu__list__cards .cards__overlay {
   position: absolute;
@@ -494,7 +499,6 @@ body {
   left: 80%;
 }
 .menu__list__cards:hover .cards__overlay .fas {
-  display: inline-block;
   transform: rotate(360deg);
   transition: transform 500ms ease-in-out;
 }

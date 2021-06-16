@@ -46,6 +46,7 @@
         cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
       animation: slide-fwd-top 0.85s cubic-bezier(0.455, 0.03, 0.515, 0.955)
         both;
+
       h2 {
         font-size: 18px;
         padding-top: 12px;
@@ -58,12 +59,20 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 12px;
+
         p {
           font-size: 15px;
           color: #353535;
           margin: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
+
+      &:hover .price {
+        text-indent: -140px;
+      }
+
       .cards__overlay {
         position: absolute;
         bottom: 0;
@@ -82,7 +91,6 @@
           top: 35%;
           right: 35%;
           font-size: 26px;
-
           white-space: nowrap;
         }
       }
@@ -90,7 +98,6 @@
         width: 20%;
         left: 80%;
         .fas {
-          display: inline-block;
           transform: rotate(360deg);
           transition: transform 500ms ease-in-out;
         }
