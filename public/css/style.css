@@ -37,19 +37,17 @@ body {
 }
 
 .restaurants {
-  background-color: #f6f6f6;
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
 }
 .restaurants h1 {
-  margin-left: 1em;
   padding-top: 2em;
 }
 .restaurants .restaurants__cards {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 1em;
   padding-bottom: 2.5em;
   margin-top: -5px;
-  align-self: center;
 }
 .restaurants .restaurants__cards > a {
   color: black;
@@ -121,6 +119,28 @@ body {
   fill: url(#bottom-to-top);
 }
 
+/** media queries from tablet**/
+@media (min-width: 46.25em) {
+  .restaurants {
+    max-width: 2000px;
+  }
+  .restaurants h1 {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  .restaurants__cards {
+    display: flex;
+    flex-direction: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants__cards .restaurant-item {
+    margin-bottom: 0;
+  }
+}
 .loader {
   position: fixed;
   top: 0px;
@@ -151,28 +171,30 @@ body {
   }
 }
 @keyframes bounce {
-  from, 20%, 53%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0);
+  0% {
+    transform: scale(1, 1) translateY(0);
   }
-  40%, 43% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
   }
-  70% {
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
   }
-  80% {
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0) scaleY(0.95);
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
   }
-  90% {
-    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
   }
 }
 .bounce {
-  animation: bounce 1s infinite both;
+  animation: bounce 2.5s infinite both;
 }
 
 .header {
@@ -343,36 +365,24 @@ body {
   color: #9356dc;
 }
 
+.wrapper {
+  background-color: #f6f6f6;
+}
+
 /** media queries from tablet**/
 @media (min-width: 46.25em) {
   .about__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2em;
   }
   .about__menu h1 {
     margin-left: 0;
+    margin-bottom: 2em;
   }
   .about__menu__cardslist {
     padding: 0;
-  }
-
-  .restaurants {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .restaurants h1 {
-    margin-left: 0;
-    margin-bottom: 1em;
-  }
-
-  .restaurants__cards {
-    display: flex;
-    flex-direction: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 /** media queries from wide**/

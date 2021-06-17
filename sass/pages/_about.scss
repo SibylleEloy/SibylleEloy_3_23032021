@@ -78,6 +78,10 @@
   }
 }
 
+.wrapper {
+  background-color: #f6f6f6;
+}
+
 /** media queries from tablet**/
 
 @include mq($from: tablet) {
@@ -85,29 +89,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2em;
     h1 {
       margin-left: 0;
+      margin-bottom: 2em;
     }
     &__cardslist {
       padding: 0;
     }
-  }
-  .restaurants {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      margin-left: 0;
-      margin-bottom: 1em;
-    }
-  }
-
-  .restaurants__cards {
-    display: flex;
-    flex-direction: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
