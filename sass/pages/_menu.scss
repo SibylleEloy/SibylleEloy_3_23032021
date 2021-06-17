@@ -67,10 +67,14 @@
           overflow: hidden;
           text-overflow: ellipsis;
         }
+        &__price {
+          font-size: 15px;
+          color: #353535;
+        }
       }
 
-      &:hover .price {
-        text-indent: -140px;
+      &:hover .cards__info__price {
+        text-indent: -110px;
       }
 
       .cards__overlay {

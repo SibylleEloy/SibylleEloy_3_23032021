@@ -470,8 +470,12 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__list__cards:hover .price {
-  text-indent: -140px;
+.menu__list__cards .cards__info__price {
+  font-size: 15px;
+  color: #353535;
+}
+.menu__list__cards:hover .cards__info__price {
+  text-indent: -110px;
 }
 .menu__list__cards .cards__overlay {
   position: absolute;
