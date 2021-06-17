@@ -8,7 +8,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 11em;
+      width: 12em;
       padding: 1em;
     }
   }
@@ -25,7 +25,6 @@
   }
   &__nav {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     padding: 1em;
     a {
@@ -35,19 +34,20 @@
 
     img {
       width: 10em;
-      padding-left: 3em;
+      margin: auto;
     }
   }
 }
 
-.header__nav {
-  @include mq($from: tablet) {
+@include mq($from: tablet) {
+  .header__nav {
     margin: auto;
     justify-content: space-between;
     width: 100%;
-  }
-  img {
-    padding-left: 0;
-    margin: auto;
+
+    img {
+      padding-left: 0;
+      margin: auto;
+    }
   }
 }
