@@ -111,7 +111,10 @@ body {
   width: 22px;
   margin-bottom: 45px;
 }
-.restaurants .restaurant-item__content svg .path {
+.restaurants .restaurant-item__content svg .path-1,
+.restaurants .restaurant-item__content svg .path_2,
+.restaurants .restaurant-item__content svg .path-3,
+.restaurants .restaurant-item__content svg .path-4 {
   stroke-width: 20;
   stroke: black;
 }
@@ -411,6 +414,8 @@ body {
 }
 .menu__banner img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .menu__title {
   width: 100%;
