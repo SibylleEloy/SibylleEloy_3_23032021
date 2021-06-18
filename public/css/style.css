@@ -107,27 +107,46 @@ body {
   font-size: 18px;
   color: #4d4d4d;
 }
-.restaurants .restaurant-item__content svg {
+.restaurants .restaurant-item__content #grayscale-logo .heart-icon {
+  fill: white;
+  stroke: black;
+}
+.restaurants .restaurant-item__content #color-logo .heart-icon {
+  fill: url(#gradient) white;
+  stroke: black;
+}
+.restaurants .restaurant-item__content #grayscale-mask,
+.restaurants .restaurant-item__content #color-mask {
+  fill: pink;
+}
+.restaurants .restaurant-item__content #heart {
   width: 22px;
   margin-bottom: 45px;
 }
-.restaurants .restaurant-item__content svg path {
-  stroke-width: 20;
-  stroke: black;
+.restaurants .restaurant-item__content #heart:hover #grayscale-mask path,
+.restaurants .restaurant-item__content #heart:hover #color-mask path {
+  animation: waves 0.66s infinite linear;
 }
-.restaurants .restaurant-item__content svg:hover {
-  fill: url(#bottom-to-top);
+@keyframes waves {
+  from {
+    transform: translateX(17rem);
+  }
+  to {
+    transform: translateX(-17rem);
+  }
 }
-.restaurants .restaurant-item__content #heart-gradient {
-  opacity: 0;
-  display: inline-block;
-  -webkit-transition: opacity 0.4s ease;
-  -moz-transition: opacity 0.4s ease;
-  -o-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+.restaurants .restaurant-item__content #heart:hover #grayscale-mask g,
+.restaurants .restaurant-item__content #heart:hover #color-mask g {
+  animation: raise 4s infinite ease-in-out;
+  animation-direction: normal;
 }
-.restaurants .restaurant-item__content #heart-gradient:hover {
-  opacity: 1;
+@keyframes raise {
+  from {
+    transform: translateY(12rem);
+  }
+  to {
+    transform: translateY(-15rem);
+  }
 }
 
 /** media queries from tablet**/

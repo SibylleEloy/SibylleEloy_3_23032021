@@ -74,31 +74,87 @@
       font-size: 18px;
       color: #4d4d4d;
     }
-    svg {
-      width: 22px;
-      margin-bottom: 45px;
 
-      path {
-        stroke-width: 20;
+    #grayscale-logo {
+      .heart-icon {
+        fill: white;
         stroke: black;
       }
+    }
 
-      &:hover {
-        fill: url(#bottom-to-top);
+    #color-logo {
+      .heart-icon {
+        fill: url(#gradient) white;
+        stroke: black;
       }
     }
 
-    #heart-gradient {
-      opacity: 0;
-      display: inline-block;
-      -webkit-transition: opacity 0.4s ease;
-      -moz-transition: opacity 0.4s ease;
-      -o-transition: opacity 0.4s ease;
-      transition: opacity 0.4s ease;
+    #grayscale-mask,
+    #color-mask {
+      fill: pink;
     }
-    #heart-gradient:hover {
-      opacity: 1;
+
+    #heart {
+      width: 22px;
+      margin-bottom: 45px;
     }
+
+    #heart:hover {
+      #grayscale-mask path,
+      #color-mask path {
+        animation: waves 0.66s infinite linear;
+      }
+
+      @keyframes waves {
+        from {
+          transform: translateX(17rem);
+        }
+        to {
+          transform: translateX(-17rem);
+        }
+      }
+
+      #grayscale-mask g,
+      #color-mask g {
+        animation: raise 4s infinite ease-in-out;
+        animation-direction: normal;
+      }
+
+      @keyframes raise {
+        from {
+          transform: translateY(12rem);
+        }
+        to {
+          transform: translateY(-15rem);
+        }
+      }
+    }
+
+    // svg {
+    //   width: 22px;
+    //   margin-bottom: 45px;
+
+    //   // path {
+    //   //   stroke-width: 20;
+    //   //   stroke: black;
+    //   // }
+
+    //   // &:hover {
+    //   //   fill: url(#bottom-to-top);
+    //   // }
+    // }
+
+    // #heart-gradient {
+    //   opacity: 0;
+    //   display: inline-block;
+    //   -webkit-transition: opacity 0.4s ease;
+    //   -moz-transition: opacity 0.4s ease;
+    //   -o-transition: opacity 0.4s ease;
+    //   transition: opacity 0.4s ease;
+    // }
+    // #heart-gradient:hover {
+    //   opacity: 1;
+    // }
   }
 }
 
