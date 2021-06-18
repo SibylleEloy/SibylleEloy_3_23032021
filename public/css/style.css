@@ -111,15 +111,23 @@ body {
   width: 22px;
   margin-bottom: 45px;
 }
-.restaurants .restaurant-item__content svg .path-1,
-.restaurants .restaurant-item__content svg .path_2,
-.restaurants .restaurant-item__content svg .path-3,
-.restaurants .restaurant-item__content svg .path-4 {
+.restaurants .restaurant-item__content svg path {
   stroke-width: 20;
   stroke: black;
 }
 .restaurants .restaurant-item__content svg:hover {
   fill: url(#bottom-to-top);
+}
+.restaurants .restaurant-item__content #heart-gradient {
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.restaurants .restaurant-item__content #heart-gradient:hover {
+  opacity: 1;
 }
 
 /** media queries from tablet**/
