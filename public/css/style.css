@@ -244,6 +244,8 @@ body {
     margin: auto;
     justify-content: space-between;
     width: 100%;
+    padding: 1.5em;
+    padding-left: 2em;
   }
   .header__nav img {
     padding-left: 0;
