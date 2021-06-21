@@ -110,6 +110,7 @@ body {
 .restaurants .restaurant-item__content #grayscale-logo .heart-icon {
   fill: white;
   stroke: black;
+  stroke-width: 20;
 }
 .restaurants .restaurant-item__content #color-logo .heart-icon {
   fill: url(#gradient) white;
@@ -118,6 +119,8 @@ body {
 .restaurants .restaurant-item__content #grayscale-mask,
 .restaurants .restaurant-item__content #color-mask {
   fill: pink;
+  stroke: black;
+  stroke-width: 20;
 }
 .restaurants .restaurant-item__content #heart {
   width: 22px;

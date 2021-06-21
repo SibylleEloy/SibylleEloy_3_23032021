@@ -79,6 +79,7 @@
       .heart-icon {
         fill: white;
         stroke: black;
+        stroke-width: 20;
       }
     }
 
@@ -92,6 +93,8 @@
     #grayscale-mask,
     #color-mask {
       fill: pink;
+      stroke: black;
+      stroke-width: 20;
     }
 
     #heart {
