@@ -1,3 +1,4 @@
+$anim-speed: 500ms;
 .menu {
   &__banner {
     position: relative;
@@ -38,16 +39,22 @@
       width: 10%;
     }
     &__cards {
+      position: relative;
+      opacity: 0;
       margin: 15px;
       padding: 3px;
       border-radius: 20px;
       height: 75px;
       background-color: white;
       box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-      -webkit-animation: slide-fwd-top 0.45s
-        cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-      animation: slide-fwd-top 0.85s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-        both;
+      animation: card-in $anim-speed linear;
+      animation-fill-mode: forwards;
+      animation-delay: 1000ms;
+      @for $i from 1 through 21 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 50ms;
+        }
+      }
 
       h2 {
         font-size: 18px;
@@ -76,7 +83,8 @@
       }
 
       &:hover .cards__info__price {
-        text-indent: -110px;
+        transform: translateX(-90px);
+        transition: transform 0.5s ease;
       }
 
       .cards__overlay {
@@ -110,30 +118,14 @@
       }
     }
   }
-
-  @-webkit-keyframes slide-fwd-top {
+  @keyframes card-in {
     0% {
       opacity: 0;
-      -webkit-transform: translateZ(0) translateY(25px);
-      transform: translateZ(0) translateY(25px);
+      top: 100px;
     }
     100% {
       opacity: 1;
-      -webkit-transform: translateZ(0px) translateY(0px);
-      transform: translateZ(0px) translateY(0px);
-    }
-  }
-
-  @keyframes slide-fwd-top {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateZ(0) translateY(25px);
-      transform: translateZ(0) translateY(25px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateZ(0px) translateY(0px);
-      transform: translateZ(0px) translateY(0px);
+      top: 0px;
     }
   }
   .btn {

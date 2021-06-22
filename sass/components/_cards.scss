@@ -121,6 +121,7 @@
       #color-mask g {
         animation: raise 4s infinite ease-in-out;
         animation-direction: normal;
+        transform: translateY(200px);
       }
 
       @keyframes raise {
