@@ -107,28 +107,60 @@ body {
   font-size: 18px;
   color: #4d4d4d;
 }
-.restaurants .restaurant-item__content #grayscale-logo .heart-icon {
+.restaurants .restaurant-item__content .heart1,
+.restaurants .restaurant-item__content .heart2,
+.restaurants .restaurant-item__content .heart3,
+.restaurants .restaurant-item__content .heart4 {
+  width: 22px;
+  margin-bottom: 45px;
+}
+.restaurants .restaurant-item__content .heart1 #grayscale-mask,
+.restaurants .restaurant-item__content .heart1 #color-mask,
+.restaurants .restaurant-item__content .heart2 #grayscale-mask,
+.restaurants .restaurant-item__content .heart2 #color-mask,
+.restaurants .restaurant-item__content .heart3 #grayscale-mask,
+.restaurants .restaurant-item__content .heart3 #color-mask,
+.restaurants .restaurant-item__content .heart4 #grayscale-mask,
+.restaurants .restaurant-item__content .heart4 #color-mask {
+  fill: pink;
+  stroke: black;
+  stroke-width: 25;
+}
+.restaurants .restaurant-item__content .heart1 #grayscale-mask g,
+.restaurants .restaurant-item__content .heart1 #color-mask g,
+.restaurants .restaurant-item__content .heart2 #grayscale-mask g,
+.restaurants .restaurant-item__content .heart2 #color-mask g,
+.restaurants .restaurant-item__content .heart3 #grayscale-mask g,
+.restaurants .restaurant-item__content .heart3 #color-mask g,
+.restaurants .restaurant-item__content .heart4 #grayscale-mask g,
+.restaurants .restaurant-item__content .heart4 #color-mask g {
+  transform: translateY(220px);
+}
+.restaurants .restaurant-item__content .heart1 .grayscale-logo .heart1-icon,
+.restaurants .restaurant-item__content .heart2 .grayscale-logo .heart1-icon,
+.restaurants .restaurant-item__content .heart3 .grayscale-logo .heart1-icon,
+.restaurants .restaurant-item__content .heart4 .grayscale-logo .heart1-icon {
   fill: white;
   stroke: black;
   stroke-width: 20;
 }
-.restaurants .restaurant-item__content #color-logo .heart-icon {
+.restaurants .restaurant-item__content .heart1:hover .color-logo .heart1-icon,
+.restaurants .restaurant-item__content .heart2:hover .color-logo .heart1-icon,
+.restaurants .restaurant-item__content .heart3:hover .color-logo .heart1-icon,
+.restaurants .restaurant-item__content .heart4:hover .color-logo .heart1-icon {
   fill: url(#gradient) white;
   stroke: black;
 }
-.restaurants .restaurant-item__content #grayscale-mask,
-.restaurants .restaurant-item__content #color-mask {
-  fill: pink;
-  stroke: black;
-  stroke-width: 20;
-}
-.restaurants .restaurant-item__content #heart {
-  width: 22px;
-  margin-bottom: 45px;
-}
-.restaurants .restaurant-item__content #heart:hover #grayscale-mask path,
-.restaurants .restaurant-item__content #heart:hover #color-mask path {
+.restaurants .restaurant-item__content .heart1:hover #grayscale-mask path,
+.restaurants .restaurant-item__content .heart1:hover #color-mask path,
+.restaurants .restaurant-item__content .heart2:hover #grayscale-mask path,
+.restaurants .restaurant-item__content .heart2:hover #color-mask path,
+.restaurants .restaurant-item__content .heart3:hover #grayscale-mask path,
+.restaurants .restaurant-item__content .heart3:hover #color-mask path,
+.restaurants .restaurant-item__content .heart4:hover #grayscale-mask path,
+.restaurants .restaurant-item__content .heart4:hover #color-mask path {
   animation: waves 0.66s infinite linear;
+  animation-fill-mode: forwards;
 }
 @keyframes waves {
   from {
@@ -138,8 +170,14 @@ body {
     transform: translateX(-17rem);
   }
 }
-.restaurants .restaurant-item__content #heart:hover #grayscale-mask g,
-.restaurants .restaurant-item__content #heart:hover #color-mask g {
+.restaurants .restaurant-item__content .heart1:hover #grayscale-mask g,
+.restaurants .restaurant-item__content .heart1:hover #color-mask g,
+.restaurants .restaurant-item__content .heart2:hover #grayscale-mask g,
+.restaurants .restaurant-item__content .heart2:hover #color-mask g,
+.restaurants .restaurant-item__content .heart3:hover #grayscale-mask g,
+.restaurants .restaurant-item__content .heart3:hover #color-mask g,
+.restaurants .restaurant-item__content .heart4:hover #grayscale-mask g,
+.restaurants .restaurant-item__content .heart4:hover #color-mask g {
   animation: raise 4s infinite ease-in-out;
   animation-direction: normal;
   transform: translateY(200px);

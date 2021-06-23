@@ -75,37 +75,70 @@
       color: #4d4d4d;
     }
 
-    #grayscale-logo {
-      .heart-icon {
-        fill: white;
-        stroke: black;
-        stroke-width: 20;
-      }
-    }
+//     #myClip {
+//       transform: translateY(90px);
+//     }
 
-    #color-logo {
-      .heart-icon {
-        fill: url(#gradient) white;
-        stroke: black;
-      }
-    }
+//     svg {
+//       width: 22px;
+//       margin-bottom: 45px;
+//       fill: transparent;
+//       stroke: black;
 
-    #grayscale-mask,
-    #color-mask {
-      fill: pink;
-      stroke: black;
-      stroke-width: 20;
-    }
+      
 
-    #heart {
+//       &:hover {
+    
+//     @keyframes openYourHeart {from {r: 0} to {r: 60px}}
+
+// #myClip circle {
+//   transform: translateY(-90px);
+//   animation: openYourHeart 15s infinite;
+// }
+// }
+// }
+
+    .heart1,
+    .heart2,
+    .heart3,
+    .heart4 {
       width: 22px;
       margin-bottom: 45px;
+
+      #grayscale-mask,
+      #color-mask {
+        fill: pink;
+        stroke: black;
+        stroke-width: 25;
+
+        g {
+          transform: translateY(220px);
+        }
+      }
+
+      .grayscale-logo {
+        .heart1-icon {
+          fill: white;
+          stroke: black;
+          stroke-width: 20;
+        }
+      }
     }
 
-    #heart:hover {
+    .heart1:hover,
+    .heart2:hover,
+    .heart3:hover,
+    .heart4:hover {
+      .color-logo {
+        .heart1-icon {
+          fill: url(#gradient) white;
+          stroke: black;
+        }
+      }
       #grayscale-mask path,
       #color-mask path {
         animation: waves 0.66s infinite linear;
+        animation-fill-mode: forwards;
       }
 
       @keyframes waves {
