@@ -98,15 +98,18 @@
 // }
 // }
 
-    .heart1,
-    .heart2,
-    .heart3,
-    .heart4 {
+    .heart {
       width: 22px;
       margin-bottom: 45px;
 
-      #grayscale-mask,
-      #color-mask {
+      #grayscale-mask1,
+      #color-mask1,
+      #grayscale-mask2,
+      #color-mask2,
+      #grayscale-mask3,
+      #color-mask3,
+      #grayscale-mask4,
+      #color-mask4 {
         fill: pink;
         stroke: black;
         stroke-width: 25;
@@ -117,7 +120,7 @@
       }
 
       .grayscale-logo {
-        .heart1-icon {
+        .heart-icon {
           fill: white;
           stroke: black;
           stroke-width: 20;
@@ -125,18 +128,21 @@
       }
     }
 
-    .heart1:hover,
-    .heart2:hover,
-    .heart3:hover,
-    .heart4:hover {
+    .heart:hover {
       .color-logo {
-        .heart1-icon {
+        .heart-icon {
           fill: url(#gradient) white;
           stroke: black;
         }
       }
-      #grayscale-mask path,
-      #color-mask path {
+      #grayscale-mask1 path,
+      #color-mask1 path,
+      #grayscale-mask2 path,
+      #color-mask2 path,
+      #grayscale-mask3 path,
+      #color-mask3 path,
+      #grayscale-mask4 path,
+      #color-mask4 path {
         animation: waves 0.66s infinite linear;
         animation-fill-mode: forwards;
       }
@@ -150,8 +156,14 @@
         }
       }
 
-      #grayscale-mask g,
-      #color-mask g {
+      #grayscale-mask1 g,
+      #color-mask1 g,
+      #grayscale-mask2 g,
+      #color-mask2 g,
+      #grayscale-mask3 g,
+      #color-mask3 g,
+      #grayscale-mask4 g,
+      #color-mask4 g {
         animation: raise 4s infinite ease-in-out;
         animation-direction: normal;
         transform: translateY(200px);
