@@ -75,28 +75,34 @@
       color: #4d4d4d;
     }
 
-//     #myClip {
-//       transform: translateY(90px);
-//     }
+    //     #myClip {
+    //       transform: translateY(90px);
+    //     }
 
-//     svg {
-//       width: 22px;
-//       margin-bottom: 45px;
-//       fill: transparent;
-//       stroke: black;
+    //     svg {
+    //       width: 22px;
+    //       margin-bottom: 45px;
+    //       fill: transparent;
+    //       stroke: black;
 
-      
+    //       &:hover {
 
-//       &:hover {
-    
-//     @keyframes openYourHeart {from {r: 0} to {r: 60px}}
+    //     @keyframes openYourHeart {from {r: 0} to {r: 60px}}
 
-// #myClip circle {
-//   transform: translateY(-90px);
-//   animation: openYourHeart 15s infinite;
-// }
-// }
-// }
+    // #myClip circle {
+    //   transform: translateY(-90px);
+    //   animation: openYourHeart 15s infinite;
+    // }
+    // }
+    // }
+
+    #gradient stop.start-color {
+      stop-color: #9356dc;
+    }
+
+    #gradient stop.end-color {
+      stop-color: #ff79da;
+    }
 
     .heart {
       width: 22px;
@@ -135,6 +141,7 @@
           stroke: black;
         }
       }
+
       #grayscale-mask1 path,
       #color-mask1 path,
       #grayscale-mask2 path,
