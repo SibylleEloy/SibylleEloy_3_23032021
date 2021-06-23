@@ -1,0 +1,43 @@
+.carditem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 310px;
+  height: 70px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px;
+  .number-circle {
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    padding: 3px;
+    background: #9356dc;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-left: -1em;
+  }
+  p {
+    margin-left: 1.5em;
+  }
+  .fa,
+  .fas {
+    margin-left: 1em;
+  }
+  &--disabled {
+    background-color: #f6f6f6;
+    .fa,
+    .fas {
+      color: #737373;
+    }
+  }
+  &--active {
+    background-color: #f4ebfe;
+    .fa,
+    .fas {
+      color: #9356dc;
+    }
+  }
+}
