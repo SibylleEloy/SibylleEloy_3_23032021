@@ -93,7 +93,7 @@ body {
   max-width: 335px;
   margin: 0 auto;
 }
-.restaurants h1 {
+.restaurants h2 {
   padding-top: 2em;
 }
 .restaurants .restaurants__cards {
@@ -148,12 +148,12 @@ body {
   margin-left: 1em;
   margin-right: 2em;
 }
-.restaurants .restaurant-item__content h2 {
+.restaurants .restaurant-item__content h3 {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
 }
-.restaurants .restaurant-item__content h3 {
+.restaurants .restaurant-item__content p {
   margin-top: 5px;
   font-weight: 400;
   font-size: 18px;
@@ -245,7 +245,7 @@ body {
   .restaurants {
     max-width: 2000px;
   }
-  .restaurants h1 {
+  .restaurants h2 {
     text-align: center;
     margin-bottom: 2em;
     padding-top: 2em;
@@ -417,6 +417,12 @@ body {
   margin: 0 3em;
   padding-top: 1.5em;
 }
+.about__project h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 3em;
+  padding-top: 1.5em;
+}
 .about__project h3 {
   text-align: center;
   font-weight: 400;
@@ -427,7 +433,7 @@ body {
 .about__menu {
   margin: 2em 0 2em 0;
 }
-.about__menu h1 {
+.about__menu h2 {
   margin-left: -10px;
   margin-bottom: 1em;
   font-size: 22px;
@@ -449,7 +455,7 @@ body {
     align-items: center;
     margin-top: 2em;
   }
-  .about__menu h1 {
+  .about__menu h2 {
     margin-left: 0;
     margin-bottom: 2em;
   }
@@ -466,7 +472,7 @@ body {
   .about__menu {
     display: block;
   }
-  .about__menu h1 {
+  .about__menu h2 {
     text-align: center;
     margin-bottom: 3em;
     margin-top: 3em;
